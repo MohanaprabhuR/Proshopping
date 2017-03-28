@@ -1,0 +1,792 @@
+<!doctype html>
+<html class="" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>proshopping</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root of your domain-->
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!--bootstrap.min.css for responsive-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!--main.css for custom style-->
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!--media-query.css for custom style-->
+    <link rel="stylesheet" href="css/media-query.css">
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <!-- Add your site or application content here -->
+    <!-- here the code starts -->
+    <header>
+        <section class="primary-header">
+            <div class="container primary-nav">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-5">
+                        <span class="badge badge-sale d-inline">Sale</span>
+                        <p class="d-inline">Additional 30% off on orders above <span>Rs. 1999</span></p>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 offset-lg-3">
+                        <ul class="nav primary-pills right-end center-end">
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-expd transition active" href="#">Sign up</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-expd transition" href="#"> My Account</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-expd transition" href="#">Checkout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-header">
+            <div class="container">
+                <nav class="navbar navbar-toggleable-md main-nav">
+                    <a class="navbar-brand" href="#"><img src="images/PS-NP-logo.png"></a>
+                    <form class="form-inline form-custom">
+                        <input class="form-control form-control-custom" type="text" placeholder="Search here..">
+                    </form>
+                </nav>
+            </div>
+        </section>
+        <section class="secoundary-header">
+            <div class="container">
+                <nav class="navbar navbar-toggleable-md main-nav">
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav nav-pills nav-page">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ecommerce</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">pages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">contact us</a>
+                            </li>
+                            <li class="nav-item cart-item">
+                                <a class="nav-link" href="#"><img src="images/cart-icon.png" class="cart-icon"><span><mark>3</mark> items in cart <mark> / $200</mark></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <section class="category-header">
+        <div class="container">
+            <nav class="breadcrumb custom-breadcrumb category-breadcrumb justify-content-center">
+                <a class="breadcrumb-item center-breadcrumb-item" href="#">Home</a>
+                <a class="breadcrumb-item center-breadcrumb-item" href="#">Mens</a>
+            </nav>
+            <h2>Bags and Accesories</h2>
+        </div>
+    </section>
+    <section class="grid">
+        <div class="container">
+            <div class="row no-margin">
+                <div class="col-xs-12 col-md-3 grid-sidebar no-padding">
+                    <div class="brand">
+                        <h2>brand</h2>
+                        <input type="text" class="form-control brand-search" placeholder="Search">
+                        <ul class="list-group">
+                            <p>
+                                <input type="checkbox" id="brand1" />
+                                <label for="brand1" class="form-check-input custom-check">Adidas</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="brand2" checked="checked" />
+                                <label for="brand2" class="form-check-input custom-check">Levis</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="brand3" checked="checked" />
+                                <label for="brand3" class="form-check-input custom-check">Puma</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="brand4" />
+                                <label for="brand4" class="form-check-input custom-check">Lee</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="brand5" />
+                                <label for="brand5" class="form-check-input custom-check">Basics</label>
+                            </p>
+                        </ul>
+                    </div>
+                    <div class="size">
+                        <h2>size</h2>
+                        <ul class="list-group">
+                            <p>
+                                <input type="checkbox" id="size1" />
+                                <label for="size1" class="form-check-input custom-check">28</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="size2" checked="checked" />
+                                <label for="size2" class="form-check-input custom-check">30</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="size3" checked="checked" />
+                                <label for="size3" class="form-check-input custom-check">32</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="size4" />
+                                <label for="size4" class="form-check-input custom-check">34</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="size5" />
+                                <label for="size5" class="form-check-input custom-check">36</label>
+                            </p>
+                        </ul>
+                    </div>
+                    <div class="color">
+                        <h2>color</h2>
+                        <ul class="list-group">
+                            <p>
+                                <input type="checkbox" id="color1" />
+                                <label for="color1" class="form-check-input custom-check "><img src="images/blue.svg" class="color-ro"> blue</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="color2" checked="checked" />
+                                <label for="color2" class="form-check-input custom-check "><img src="images/grey.svg" class="color-ro"> grey</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="color3" checked="checked" />
+                                <label for="color3" class="form-check-input custom-check "><img src="images/red.svg" class="color-ro"> red</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="color4" />
+                                <label for="color4" class="form-check-input custom-check "><img src="images/black.svg" class="color-ro"> black</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="color5" />
+                                <label for="color5" class="form-check-input custom-check "><img src="images/yellow.png" class="color-ro"> yellow</label>
+                            </p>
+                        </ul>
+                    </div>
+                    <div class="price">
+                        <h2>price</h2>
+                        <ul class="list-group">
+                            <li class="list-group-item no-border">
+                                <span> $20.00 - $29.99</span>
+                            </li>
+                            <li class="list-group-item no-border">
+                                <span>$30.00 - $39.99</span>
+                            </li>
+                            <li class="list-group-item no-border">
+                                <span>$40.00 - $49.99</span>
+                            </li>
+                            <li class="list-group-item no-border">
+                                <span>$50.00 and above</span>
+                            </li>
+                        </ul>
+                        <div id="slider-range"></div>
+                        <p>
+                            <input type="text" id="amount" class="range-point">
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-9 grid-box no-padding">
+                    <div class="new-arrivals">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <img class="d-block img-fluid" src="images/new-arrivals-1.png" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block img-fluid" src="images/new-arrivals-2.png" alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block img-fluid" src="images/new-arrivals-3.png" alt="Third slide">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arrivals-details">
+                            <span>New arrivals</span>
+                            <h2>love the winter</h2>
+                            <small>Lorem ipsum dolor </small>
+                        </div>
+                    </div>
+                    <div class="product-grid">
+                        <h3>84 results</h3>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle sort-select custom-select" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                sort by
+                            </button>
+                            <div class="dropdown-menu custom-dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">popularity</a>
+                                <a class="dropdown-item" href="#">price-low to high</a>
+                                <a class="dropdown-item" href="#">price-high to low</a>
+                                <a class="dropdown-item" href="#">discount</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-grid-items pd-t70">
+                        <div class="card-group">
+                            <div class="col-6 col-md-4 no-padding sm-mx-auto mrb-80">
+                                <div class="card no-padding-sm">
+                                    <a href="#">
+                                        <img class="img-fluid" src="images/main-1.png" alt="Card image cap">
+                                        <div class="card-block">
+                                            <h4 class="card-title">Life & Love Hoodie</h4>
+                                            <small>$90</small>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 no-padding sm-mx-auto mrb-80">
+                                <div class="card no-padding-sm">
+                                    <a href="#">
+                                        <img class="img-fluid" src="images/main-2.png" alt="Card image cap">
+                                        <div class="card-block">
+                                            <h4 class="card-title">Life & Love Hoodie</h4>
+                                            <small>$43</small>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 no-padding sm-mx-auto mrb-80">
+                                <div class="card no-padding-sm">
+                                    <a href="#">
+                                        <img class="img-fluid" src="images/main-3.png" alt="Card image cap">
+                                        <div class="card-block">
+                                            <h4 class="card-title">Life & Love Hoodie</h4>
+                                            <small>$89</small>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 no-padding sm-mx-auto mrb-80">
+                                <div class="card no-padding-sm no-margin-right">
+                                    <a href="#">
+                                        <img class="img-fluid" src="images/main-4.png" alt="Card image cap">
+                                        <div class="card-block">
+                                            <h4 class="card-title">Life & Love Hoodie</h4>
+                                            <small>$45</small>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 no-padding sm-mx-auto mrb-80">
+                                <div class="card no-padding-sm no-margin-right">
+                                    <a href="#">
+                                        <img class="img-fluid" src="images/pro-grid-1.png" alt="Card image cap">
+                                        <div class="card-block">
+                                            <h4 class="card-title">Life & Love Hoodie</h4>
+                                            <small>$45</small>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 no-padding sm-mx-auto mrb-80">
+                                <div class="card no-padding-sm no-margin-right">
+                                    <a href="#">
+                                        <img class="img-fluid" src="images/pro-grid-2.png" alt="Card image cap">
+                                        <div class="card-block">
+                                            <h4 class="card-title">Life & Love Hoodie</h4>
+                                            <small>$45</small>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 no-padding sm-mx-auto mrb-80">
+                                <div class="card no-padding-sm no-margin-right">
+                                    <a href="#">
+                                        <img class="img-fluid" src="images/pro-grid-3.png" alt="Card image cap">
+                                        <div class="card-block">
+                                            <h4 class="card-title">Life & Love Hoodie</h4>
+                                            <small>$45</small>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 no-padding sm-mx-auto mrb-80">
+                                <div class="card no-padding-sm no-margin-right">
+                                    <a href="#">
+                                        <img class="img-fluid" src="images/pro-grid-4.png" alt="Card image cap">
+                                        <div class="card-block">
+                                            <h4 class="card-title">Life & Love Hoodie</h4>
+                                            <small>$45</small>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 no-padding sm-mx-auto mrb-80">
+                                <div class="card no-padding-sm no-margin-right">
+                                    <a href="#">
+                                        <img class="img-fluid" src="images/pro-grid-5.png" alt="Card image cap">
+                                        <div class="card-block">
+                                            <h4 class="card-title">Life & Love Hoodie</h4>
+                                            <small>$45</small>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 no-padding sm-mx-auto mrb-80">
+                                <div class="card no-padding-sm no-margin-right">
+                                    <a href="#">
+                                        <img class="img-fluid" src="images/pro-grid-6.png" alt="Card image cap">
+                                        <div class="card-block">
+                                            <h4 class="card-title">Life & Love Hoodie</h4>
+                                            <small>$45</small>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 no-padding sm-mx-auto mrb-80">
+                                <div class="card no-padding-sm no-margin-right">
+                                    <a href="#">
+                                        <img class="img-fluid" src="images/pro-grid-7.png" alt="Card image cap">
+                                        <div class="card-block">
+                                            <h4 class="card-title">Life & Love Hoodie</h4>
+                                            <small>$45</small>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 no-padding sm-mx-auto mrb-80">
+                                <div class="card no-padding-sm no-margin-right">
+                                    <a href="#">
+                                        <img class="img-fluid" src="images/pro-grid-8.png" alt="Card image cap">
+                                        <div class="card-block">
+                                            <h4 class="card-title">Life & Love Hoodie</h4>
+                                            <small>$45</small>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 no-padding sm-mx-auto mrb-80">
+                                <div class="card no-padding-sm no-margin-right">
+                                    <a href="#">
+                                        <img class="img-fluid" src="images/pro-grid-9.png" alt="Card image cap">
+                                        <div class="card-block">
+                                            <h4 class="card-title">Life & Love Hoodie</h4>
+                                            <small>$45</small>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 no-padding sm-mx-auto mrb-80">
+                                <div class="card no-padding-sm no-margin-right">
+                                    <a href="#">
+                                        <img class="img-fluid" src="images/pro-grid-10.png" alt="Card image cap">
+                                        <div class="card-block">
+                                            <h4 class="card-title">Life & Love Hoodie</h4>
+                                            <small>$45</small>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 no-padding sm-mx-auto mrb-80">
+                                <div class="card no-padding-sm no-margin-right">
+                                    <a href="#">
+                                        <img class="img-fluid" src="images/pro-grid-11.png" alt="Card image cap">
+                                        <div class="card-block">
+                                            <h4 class="card-title">Life & Love Hoodie</h4>
+                                            <small>$45</small>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav aria-label="Page navigation" class="custom-pagination">
+                        <ul class="pagination justify-content-end customize-pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true"><img src="images/previous-arrow.png"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true"><img src="images/next-arrow.png"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="best-random grey-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 best-sellers">
+                    <h2 class="text-left">best sellers</h2>
+                    <div class="card-group no-border no-padding-top">
+                        <div class="col-sm-6 box-shadow-border">
+                            <div class="card card-height no-padding-sm">
+                                <a href="#" class="">
+                                    <img class="" src="images/sell-1.png" alt="Card image cap">
+                                    <div class="card-block">
+                                        <h4 class="card-title">Nike Men Polo T-shirt</h4>
+                                        <small>$<b>23</b></small>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 box-shadow-border">
+                            <div class="card card-height no-padding-sm">
+                                <a href="#" class="">
+                                    <img class="" src="images/sell-2.png" alt="Card image cap">
+                                    <div class="card-block">
+                                        <h4 class="card-title">Nike Men Polo T-shirt</h4>
+                                        <small>$<b>43</b></small>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 box-shadow-border">
+                            <div class="card card-height no-padding-sm">
+                                <a href="#" class="">
+                                    <img class="" src="images/random-3.png" alt="Card image cap">
+                                    <div class="card-block">
+                                        <h4 class="card-title">Nike Men Black Air Max Compete</h4>
+                                        <small>$<b>18</b></small>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 box-shadow-border">
+                            <div class="card card-height no-padding-sm">
+                                <a href="#" class="">
+                                    <img class="" src="images/sell-3.png" alt="Card image cap">
+                                    <div class="card-block">
+                                        <h4 class="card-title">Nike Men Black Air Max Compete</h4>
+                                        <small>$<b>46</b></small>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 random-products">
+                    <h2>random products</h2>
+                    <div class="card-group no-border no-padding-top">
+                        <div class="col-sm-6 box-shadow-border">
+                            <div class="card card-height no-padding-sm ">
+                                <a href="#" class="">
+                                    <img class="" src="images/random-1.png" alt="Card image cap">
+                                    <div class="card-block">
+                                        <h4 class="card-title">Nike Men Polo T-shirt</h4>
+                                        <small>$<b>30</b></small>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 box-shadow-border">
+                            <div class="card card-height no-padding-sm ">
+                                <a href="#" class="">
+                                    <img class="" src="images/random-2.png" alt="Card image cap">
+                                    <div class="card-block">
+                                        <h4 class="card-title">Nike Men Polo T-shirt</h4>
+                                        <small>$<b>16</b></small>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 box-shadow-border">
+                            <div class="card card-height no-padding-sm ">
+                                <a href="#" class="">
+                                    <img class="" src="images/random-3.png" alt="Card image cap">
+                                    <div class="card-block">
+                                        <h4 class="card-title">Nike Men Black Air Max Compete</h4>
+                                        <small>$<b>20</b></small>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 box-shadow-border">
+                            <div class="card card-height no-padding-sm ">
+                                <a href="#" class="">
+                                    <img class="" src="images/random-4.png" alt="Card image cap">
+                                    <div class="card-block">
+                                        <h4 class="card-title">Nike Men Black Air Max Compete</h4>
+                                        <small>$<b>36</b></small>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="more morebg">
+        <div class="container">
+            <div class="bg-more">
+                <p>This is a site wide call to action. Edit me in Theme Options!</p>
+                <a href="#">
+                    <button type="button" class="btn btn-transparent transition">FIND OUT MORE</button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="more-links">
+        <div class="container">
+            <div class="more-link">
+                <div class="row more-lists">
+                    <div class="col-6 col-md-6 col-lg-3 no-padding">
+                        <div class="more-content">
+                            <h3>about store</h3>
+                            <p>Dolor church-key veniam, fap Bushwick mumblecore irure Vice consectetur 3 wolf moon sapiente literally quinoa.</p>
+                        </div>
+                        <div class="more-content">
+                            <h3>newsletter sign up</h3>
+                            <p>Enter your email and we'll send you a coupon with 10% off your next order.
+                                <br> Add any text here</p>
+                        </div>
+                        <div class="id-form">
+                            <input type="email" class="form-control" id="email1" aria-describedby="emailHelp" placeholder="Enter your email">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16" class="go-icon">
+                                <image id="go-icon.svg" width="16" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhAhcPDgVDd8D9AAAA5klEQVQoz43RMU7DQBCF4W9nV9hyQZ0zUKWiRBEHQFFOkQuliHyWFBwjNaJHQilWYJkiNkkaRLvzr96bfxRFQVraO6qqo31aMk2KonR6g+pgZ+egGvSlm4HOq1GfFyFAXuiNXktXSPTGtKURD7EKISNtjfpEWhr0SaNpvTmdkenjkJbs1bzIGo1YqzOS5YVqz9EhmwCxuUYcHKl24AyIjS+f8RSwU8+1OafCh2937i/vU0SrFeLZSY2XkH8jppKtVqzm8VXJec1W23pX03ryMK95EZXFY6wTt6KuVc+1blT/51h/nvsHWj5Yn+onwpgAAAAASUVORK5CYII=" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-3 shop-text">
+                        <h3>shop</h3>
+                        <div class="men-item">
+                            <ul class="list-inline">
+                                <h4>Men</h4>
+                                <a href="#">
+                                    <li>Men’s Clothing </li>
+                                </a>
+                                <a href="#">
+                                    <li>Men’s Shoes </li>
+                                </a>
+                                <a href="#">
+                                    <li>Men’s Accessories </li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="women-item">
+                            <ul class="list-inline">
+                                <h4>women</h4>
+                                <a href="#">
+                                    <li>women’s Clothing </li>
+                                </a>
+                                <a href="#">
+                                    <li>women’s Shoes </li>
+                                </a>
+                                <a href="#">
+                                    <li>women’s Accessories </li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="kids-item">
+                            <ul class="list-inline">
+                                <h4>kids</h4>
+                                <a href="#">
+                                    <li>kids’s Clothing </li>
+                                </a>
+                                <a href="#">
+                                    <li>kids’s Shoes </li>
+                                </a>
+                                <a href="#">
+                                    <li>kids’s Accessories </li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-3 border-box no-padding-lg">
+                        <h3>product types</h3>
+                        <ul class="list-inline">
+                            <a href="#">
+                                <li>shirts</li>
+                            </a>
+                            <a href="#">
+                                <li>Pants</li>
+                            </a>
+                            <a href="#">
+                                <li>Tights</li>
+                            </a>
+                            <a href="#">
+                                <li>shirts</li>
+                            </a>
+                            <a href="#">
+                                <li>Pants</li>
+                            </a>
+                            <a href="#">
+                                <li>Tights</li>
+                            </a>
+                            <a href="#">
+                                <li>shirts</li>
+                            </a>
+                        </ul>
+                        <ul class="list-inline">
+                            <a href="#">
+                                <li>jerseys</li>
+                            </a>
+                            <a href="#">
+                                <li>shorts</li>
+                            </a>
+                            <a href="#">
+                                <li>Tights</li>
+                            </a>
+                            <a href="#">
+                                <li>bags</li>
+                            </a>
+                            <a href="#">
+                                <li>jackets</li>
+                            </a>
+                            <a href="#">
+                                <li>Tights</li>
+                            </a>
+                            <a href="#">
+                                <li>jerseys</li>
+                            </a>
+                        </ul>
+                        <ul class="list-inline">
+                            <a href="#">
+                                <li>shirts</li>
+                            </a>
+                            <a href="#">
+                                <li>Pants</li>
+                            </a>
+                            <a href="#">
+                                <li>Tights</li>
+                            </a>
+                            <a href="#">
+                                <li>shirts</li>
+                            </a>
+                            <a href="#">
+                                <li>Pants</li>
+                            </a>
+                            <a href="#">
+                                <li>Tights</li>
+                            </a>
+                            <a href="#">
+                                <li>shirts</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-3 support-list">
+                        <h3>support</h3>
+                        <ul class="list-inline">
+                            <a href="#">
+                                <li>Shipping</li>
+                            </a>
+                            <a href="#">
+                                <li>Customer Service</li>
+                            </a>
+                            <a href="#">
+                                <li>Paayment</li>
+                            </a>
+                            <a href="#">
+                                <li>Returning</li>
+                            </a>
+                            <a href="#">
+                                <li>Delivery Terms</li>
+                            </a>
+                            <a href="#">
+                                <li>Site Map</li>
+                            </a>
+                            <a href="#">
+                                <li>Ordering</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-bg">
+        <div class="container">
+            <div class="row pd-lr-15">
+                <div class="col-sm-12 col-md-12 col-lg-6 pd-20">
+                    <p>Copyright 2014 Shopping was created in WordPress by Neptune Themes.</p>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4 pd-20 footer-link">
+                    <ul class="list-inline mr-bt-zero">
+                        <li class="list-inline-item text-uppercase"><a href="#" class="transition">faq</a></li>
+                        <li class="list-inline-item text-uppercase"><a href="#" class="transition">terms</a></li>
+                        <li class="list-inline-item text-uppercase"><a href="#" class="transition">privacy</a></li>
+                        <li class="list-inline-item text-uppercase"><a href="#" class="transition">blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-2 pd-20 social-networks">
+                    <ul class="list-inline mr-bt-zero">
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8" height="16" viewBox="0 0 8 16">
+                                    <image id="fb-icon.svg" width="8" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAQCAQAAACBg/b2AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhAgYSERQYxu5IAAAAaklEQVQY073MsQnCUAAG4c/wigzgEFaWYiHulxksHUCygIUTuIJdwDaCSOC3eUFxAK+8gxORZY65J0l6ETllpl+ExkOLweAiUmrdRTQ+vKDo7Ks4GJ2LlW0Va1yLyVMLRpPb93TzO4U/iTfWOT7oqsnK1wAAAABJRU5ErkJggg==" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="14" viewBox="0 0 16 14">
+                                    <image id="twt-icon.svg" width="16" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAOCAQAAACMJlQBAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhAgYSERlmd5L1AAAA10lEQVQY022QoU5CcRyFP/67u4kR7gg3OKLBxEzOSGTM4AgEH8BA5BUMPgJPwAw2R3OOQDCIBjeTVa9VZ3LwGbjAvcD3S7+dc7azU5EdGpwTM+YVqGLqQArX9lfVuUMfPMYz9dool2O/3PBoH09VfbZjEJsWuTXG4FP+fjpyWDJcSESLjAUBSOlt1c0A6/64n7mJIHbz3tvcy9JQ88a/PYa2SAC++SDameuOMcBqnq6TUvrNZKkgBo+8KlWdmq6WxZbTUvbdy/WuSEWAQ044IJAx44VFsco//RcPxr/rNyYAAAAASUVORK5CYII=" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+                                    <image id="insta-icon.svg" width="16" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhAgYSER74EwdWAAAA/UlEQVQoz32QP0tCYRSHH19uUeAkIiLUJCF9BoemaIg+gGMNDm0GTvc7NPsdIoeGIIemkGhsqLUlI4SIG/TfpyGvdkV6zvQeHs77OweDFXdteeUsA2NDRJsHCozI8sg+I/ZoB5rM454jjunTjCgSEQEhIywBsEwRk8mf125bsOiON+qzT36b5IxZAOCOMw5ZA245YIsVAD6nEzY8sSFiw66b426SCq+W7cu4Liz5/iuk0b6IeJtE/CCki6dCnhKL1AGoE1gd78E0Q8+ql3bt2rfq+WwG1VNr1qy5bm/SS3Im5DMXDJT/vF8ihhmhMnPyYaDDf3QwGDtwHgNjww+0xtw6gAnQTAAAAABJRU5ErkJggg==" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="16" viewBox="0 0 14 16">
+                                    <image id="prit-icon.svg" width="14" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhAgYSESOge0tHAAAA/UlEQVQY02WQvUoDYRBFDx9hqyCpRCFFsEitkEpEfARBq7WxEkHBRnwFH0GsrATFVD6CoLGwC/iDWMgWQVBSJAoWu8fi2xWJd7o5zMydi4g45b49R+YOPLUTuxF1zNQHTzzy2tzcgwq2/PDTtNyBSw7V9QjP1VRcNjWIuK0+Cdb99llcMVdXRWyq2grMkXALrBGAGgBfADQC47JVAAVXADQBeMdg5tAZt9ReaWlXHUigYI868ywAdwAk7ABnlH+2TeyrL7ZteqG+OV2FgA1zR74alcWMojtYJHDDBpvM0qfLGPidPNQY2d8K5WSLgksmVMEaXR4nYXXznmP+6QcwVcM/8bjuEAAAAABJRU5ErkJggg==" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jquery.min.js for jquery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+    <script>
+    !window.jQuery && document.write('<script src="js/vendor/jquery.min.js"><\/script>')
+    </script>
+    <!--bootstrap.min.js for responsive script-->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!--console-err.js to avoid cosole error in browser-->
+    <script src="js/console-err.js"></script>
+    <!--main.js for custom script-->
+    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

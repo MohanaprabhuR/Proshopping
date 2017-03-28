@@ -1,0 +1,384 @@
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+    thead {
+        display: table-header-group;
+    }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100% !important;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+@media (max-width: 1199px) {
+    html {
+        font-size: 100%;
+    }
+    .footer-link li,
+    .social-networks li {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 95%;
+    }
+    .form-control-custom {
+        width: 100% !important;
+        margin-top: 20px;
+    }
+    button.btn.btn-transparent {
+        float: none;
+    }
+    .bg-more.btn.btn-transparent {
+        text-align: center;
+    }
+    .social-networks {
+        text-align: center;
+        padding-top: 0;
+    }
+    footer {
+        text-align: center;
+    }
+    .footer-link {
+        padding-top: 0;
+    }
+    .bg-more {
+        text-align: center;
+    }
+    .social-networks {
+        display: block;
+    }
+    .latest small {
+        float: left;
+    }
+    .nav.nav-pills.nav-page {
+        width: 100%;
+        display: inline;
+        text-align: center;
+    }
+    .nav-page li {
+        padding: 12px 0px;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nav-item.cart-item {
+        margin-bottom: 20px;
+        display: none;
+    }
+    .btn-wishlist {
+        margin-top: 20px;
+    }
+    .product-detailblog p {
+        width: 100%;
+    }
+    .bg-more p {
+        margin-bottom: 1rem;
+    }
+    .no-padding-lg {
+        padding: 0;
+    }
+    .shop-text,
+    .support-list {
+        padding-left: 5rem;
+    }
+    [type="checkbox"]:not(:checked) + label::after,
+    [type="checkbox"]:checked + label::after {
+        top: -32.5px;
+    }
+}
+
+@media (max-width: 767px) {
+    html {
+        font-size: 90%;
+    }
+    .primary-nav {
+        text-align: center;
+    }
+    .center-end {
+        justify-content: center;
+    }
+    .navbar-toggler-right {
+        right: 0rem;
+    }
+    .browse-content {
+        width: 100%;
+    }
+    .latest {
+        text-align: center;
+    }
+    .card {
+        margin-bottom: 20px;
+    }
+    .latest small {
+        float: right;
+    }
+    .best-random h2 {
+        text-align: left;
+    }
+    .shipping {
+        position: relative;
+    }
+    .btn-wishlist {
+        margin-top: 0;
+    }
+    .social-ilink {
+        margin-bottom: 20px;
+    }
+    .product-details,
+    .product-detailblog,
+    .product-links,
+    .reviews {
+        margin: 0;
+    }
+    .no-padding-md {
+        padding: 0;
+    }
+    .grid-sidebar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .grid-sidebar h2 {
+        width: 50%;
+    }
+    .grid-sidebar div {
+        width: 100%;
+    }
+    .brand-search {
+        display: none;
+    }
+    .range-point {
+        text-align: left;
+    }
+    #slider-range {
+        width: 120px;
+        margin-bottom: 10px;
+    }
+    .best-sellers {
+        margin-bottom: 30px;
+    }
+    .more-links {
+        display: none;
+    }
+    [type="checkbox"]:not(:checked) + label::after,
+    [type="checkbox"]:checked + label::after {
+        top: -30px;
+        left: .5px;
+    }
+}
+
+@media (max-width: 580px) {
+    html {
+        font-size: 85%;
+    }
+    .products,
+    .best-random,
+    .latest {
+        text-align: center;
+    }
+    .best-random h2 {
+        text-align: center!important;
+    }
+    .card-group .card:last-child {
+        margin-right: 0;
+    }
+    .latest small {
+        float: left;
+    }
+    .product-category {
+        top: 5%;
+    }
+    .main-header {
+        padding: 1.5rem 0;
+    }
+    .navbar-toggler-right {
+        position: absolute;
+        right: 0;
+        top: -122px;
+    }
+    .nav-page li {
+        padding: 12px 0px;
+        width: 100%;
+    }
+    .no-padding-sm {
+        padding: 0;
+    }
+    .no-padding-top-sm {
+        padding-top: 0;
+    }
+    .no-padding-bottom-sm {
+        padding-bottom: 0;
+    }
+    .no-padding-left-sm {
+        padding-left: 0;
+    }
+    .no-padding-right-sm {
+        padding-right: 0;
+    }
+    .no-margin-sm {
+        margin: 0;
+    }
+    .no-margin-top-sm {
+        margin-top: 0;
+    }
+    .no-margin-bottom-sm {
+        margin-bottom: 0;
+    }
+    .no-margin-left-sm {
+        margin-left: 0;
+    }
+    .no-margin-right-sm {
+        margin-right: 0;
+    }
+    .full-width-sm {
+        width: 100%;
+    }
+    .box-shadow-border {
+        padding: 20px 0;
+        margin: 0 auto;
+        width: 50%;
+    }
+    .custom-select,
+    .btn-cart {
+        font-size: 11px;
+        margin-right: 5px;
+    }
+    .btn.btn-primary {
+        padding: 0.625rem 0.5rem;
+    }
+    [type="checkbox"]:not(:checked) + label::after,
+    [type="checkbox"]:checked + label::after {
+        top: -28px;
+        left: .5px;
+    }
+}
+
+@media (max-width: 420px) {
+    .products .pd-t70 {
+        padding-top: 3.375rem;
+    }
+    .category {
+        padding: 0;
+    }
+    .primary-header p {
+        font-size: 11px;
+    }
+    .product-category h2 {
+        line-height: 1.1;
+    }
+    .custom-select {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .sort-select.custom-select {
+        margin-bottom: 0;
+    }
+    .grid-sidebar {
+        display: block;
+    }
+    .grid-sidebar div {
+        width: 50%;
+        float: left;
+        margin-bottom: 20px;
+    }
+    .custom-pagination {
+        padding: 1.75rem 0;
+    }
+    .grid {
+        padding: 1.125rem 0;
+    }
+    .mrb-80 {
+        margin-bottom: 3rem;
+    }
+    .arrivals-details {
+        top: -25px;
+    }
+    .box-shadow-border {
+        width: 100%;
+    }
+    .info-icon {
+        top: -20px;
+        right: 0;
+    }
+    .btn.btn-primary {
+        width: 100%;
+    }
+    .btn-cart {
+        margin-bottom: 20px;
+    }
+}
